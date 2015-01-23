@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shangjieba.client.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.shangjieba.client.android.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/work_demo_icon"
+        android:label="@string/app_label"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/Theme.ApplicationTheme" >
+        <activity android:name="com.shangjieba.client.android.activiy.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
